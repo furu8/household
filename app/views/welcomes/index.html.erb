@@ -1,5 +1,9 @@
-<h2>My Household Book</h2>
+<h2>
+  <%= link_to '追加', new_welcome_path, class: 'header-menu' %>
+  My Household Book
+</h2>
 <ul>
+  日付　　食費　
   <% @welcomes.each do |welcome| %>
   <li><%= welcome.week %> <%= welcome.money %></li>
   <% end %>

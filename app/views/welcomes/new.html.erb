@@ -1,0 +1,12 @@
+<h2>新規入力</h2>
+<%= form_for :welcome, url: welcomes_path do |f| %>
+<p>
+  <%= f.text_field :week, placeholder: '曜日' %>
+</p>
+<p>
+  <%= f.text_field :money, placeholder: '金額' %>
+</p>
+<p>
+  <%= f.submit "追加" %>
+</p>
+<% end %>
