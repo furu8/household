@@ -1,6 +1,5 @@
 <h2>
   <%= link_to '追加', new_welcome_path, class: 'header-menu' %>
-<<<<<<< HEAD
   家計簿
 </h2>
 <% ave = 0 %>
@@ -17,17 +16,7 @@
                 welcome_path(welcome), 
                 method: :delete,  
                 class: 'command',
-                data: { confirm: '削除しますか?'} %>
+                data: { confirm: '削除しますか?' } %>
   </li>
   <% end %>
-  
-=======
-  My Household Book
-</h2>
-<ul>
-  日付　　食費　
-  <% @welcomes.each do |welcome| %>
-  <li><%= welcome.week %> <%= welcome.money %></li>
-  <% end %>
->>>>>>> origin/master
 </ul>
