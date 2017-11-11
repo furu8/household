@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  month: MyString
+  date: MyString
+  week: MyString
+  money: MyString
+
+two:
+  month: MyString
+  date: MyString
+  week: MyString
+  money: MyString

@@ -1,0 +1,23 @@
+<h2>
+  <%= link_to '追加', new_welcome_path, class: 'header-menu' %>
+  家計簿
+</h2>
+<% ave = 0 %>
+<ul>
+  日付　　食費　
+  <% @welcomes.each do |welcome| %>
+  <li>
+    <%= welcome.month %>月
+    <%= welcome.date%>日
+    <%= welcome.week%>曜日
+    <%= welcome.money %>円
+    <%= link_to '[変更]', edit_welcome_path(welcome), class: 'command'%>
+    <%= link_to '[X]', 
+                welcome_path(welcome), 
+                method: :delete,  
+                class: 'command',
+                data: { confirm: '削除しますか?'} %>
+  </li>
+  <% end %>
+  
+</ul>
