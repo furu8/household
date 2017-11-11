@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+<<<<<<< HEAD
+=======
+
+5.times do |i|
+  Welcome.create(week: "week #{i}", money: "money #{i}")
+end
+>>>>>>> origin/master

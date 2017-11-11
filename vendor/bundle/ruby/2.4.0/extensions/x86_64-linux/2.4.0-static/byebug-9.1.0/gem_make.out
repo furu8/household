@@ -1,5 +1,9 @@
 current directory: /home/furu/household/vendor/bundle/ruby/2.4.0/gems/byebug-9.1.0/ext/byebug
+<<<<<<< HEAD
 /home/furu/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171111-4801-fni003.rb extconf.rb
+=======
+/home/furu/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171105-2961-1laugkk.rb extconf.rb
+>>>>>>> origin/master
 creating Makefile
 
 current directory: /home/furu/household/vendor/bundle/ruby/2.4.0/gems/byebug-9.1.0/ext/byebug
@@ -16,4 +20,8 @@ linking shared-object byebug/byebug.so
 
 current directory: /home/furu/household/vendor/bundle/ruby/2.4.0/gems/byebug-9.1.0/ext/byebug
 make "DESTDIR=" install
+<<<<<<< HEAD
 /usr/bin/install -c -m 0755 byebug.so ./.gem.20171111-4801-1lvkn5c/byebug
+=======
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20171105-2961-1x1ht98/byebug
+>>>>>>> origin/master

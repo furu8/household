@@ -1,5 +1,9 @@
 current directory: /home/furu/household/vendor/bundle/ruby/2.4.0/gems/sqlite3-1.3.13/ext/sqlite3
+<<<<<<< HEAD
 /home/furu/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171111-4801-guenf3.rb extconf.rb
+=======
+/home/furu/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171105-2961-5d7cdm.rb extconf.rb
+>>>>>>> origin/master
 checking for sqlite3.h... yes
 checking for pthread_create() in -lpthread... yes
 checking for sqlite3_libversion_number() in -lsqlite3... yes
@@ -30,4 +34,8 @@ linking shared-object sqlite3/sqlite3_native.so
 
 current directory: /home/furu/household/vendor/bundle/ruby/2.4.0/gems/sqlite3-1.3.13/ext/sqlite3
 make "DESTDIR=" install
+<<<<<<< HEAD
 /usr/bin/install -c -m 0755 sqlite3_native.so ./.gem.20171111-4801-478ccl/sqlite3
+=======
+/usr/bin/install -c -m 0755 sqlite3_native.so ./.gem.20171105-2961-neafl7/sqlite3
+>>>>>>> origin/master

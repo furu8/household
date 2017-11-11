@@ -1,5 +1,9 @@
 current directory: /home/furu/household/vendor/bundle/ruby/2.4.0/gems/ffi-1.9.18/ext/ffi_c
+<<<<<<< HEAD
 /home/furu/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171111-4801-6aoxg2.rb extconf.rb
+=======
+/home/furu/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171105-2961-54wzk0.rb extconf.rb
+>>>>>>> origin/master
 checking for ffi.h... no
 checking for ffi.h in /usr/local/include,/usr/include/ffi... no
 checking for shlwapi.h... no
@@ -170,4 +174,8 @@ compiling Types.c
 compiling Variadic.c
 compiling ffi.c
 linking shared-object ffi_c.so
+<<<<<<< HEAD
 /usr/bin/install -c -m 0755 ffi_c.so ./.gem.20171111-4801-5pr9go
+=======
+/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20171105-2961-193hokn
+>>>>>>> origin/master

@@ -1,6 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+<<<<<<< HEAD
   month: MyString
   date: MyString
   week: MyString
@@ -11,3 +12,13 @@ two:
   date: MyString
   week: MyString
   money: MyString
+=======
+  week: MyString
+  money: MyString
+  ave: MyString
+
+two:
+  week: MyString
+  money: MyString
+  ave: MyString
+>>>>>>> origin/master

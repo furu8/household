@@ -1,5 +1,9 @@
 current directory: /home/furu/household/vendor/bundle/ruby/2.4.0/gems/nio4r-2.1.0/ext/nio4r
+<<<<<<< HEAD
 /home/furu/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171111-4801-1mdnjsq.rb extconf.rb
+=======
+/home/furu/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171105-2961-13hs2y5.rb extconf.rb
+>>>>>>> origin/master
 checking for unistd.h... yes
 checking for sys/select.h... yes
 checking for poll.h... yes
@@ -220,4 +224,8 @@ linking shared-object nio4r_ext.so
 
 current directory: /home/furu/household/vendor/bundle/ruby/2.4.0/gems/nio4r-2.1.0/ext/nio4r
 make "DESTDIR=" install
+<<<<<<< HEAD
 /usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20171111-4801-1xmzi8
+=======
+/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20171105-2961-10fodus
+>>>>>>> origin/master

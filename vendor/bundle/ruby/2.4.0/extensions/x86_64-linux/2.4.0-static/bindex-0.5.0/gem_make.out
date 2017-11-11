@@ -1,5 +1,9 @@
 current directory: /home/furu/household/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+<<<<<<< HEAD
 /home/furu/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171111-4801-zkoxw9.rb extconf.rb
+=======
+/home/furu/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171105-2961-1duyqxx.rb extconf.rb
+>>>>>>> origin/master
 creating Makefile
 
 current directory: /home/furu/household/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
@@ -12,4 +16,8 @@ linking shared-object bindex/cruby.so
 
 current directory: /home/furu/household/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
 make "DESTDIR=" install
+<<<<<<< HEAD
 /usr/bin/install -c -m 0755 cruby.so ./.gem.20171111-4801-1jy6daw/bindex
+=======
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20171105-2961-1vfn3ja/bindex
+>>>>>>> origin/master
