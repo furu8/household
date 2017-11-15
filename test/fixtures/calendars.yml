@@ -2,12 +2,6 @@
 
 one:
   month: MyString
-  date: MyString
-  week: MyString
-  money: MyString
 
 two:
   month: MyString
-  date: MyString
-  week: MyString
-  money: MyString

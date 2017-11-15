@@ -1,4 +1,6 @@
 class WelcomesController < ApplicationController
+  before_action :set_welcome, only: [:edit, :update, :destroy]
+  
   def index
     @welcomes = Welcome.all
   end
@@ -8,7 +10,6 @@ class WelcomesController < ApplicationController
   end
 
   def edit
-    @welcome = Welcome.find(params[:id])
   end
   
   def create
@@ -16,9 +17,12 @@ class WelcomesController < ApplicationController
     puts month.to_i
     date = params[:date]
     puts date.to_i
+    week = params[:week]
+    puts week.to_i
     @welcome = Welcome.new(welcome_params)      
     @welcome.month = month
-    @welcome.date = date        
+    @welcome.date = date    
+    @welcome.week = week        
     if @welcome.save
       redirect_to welcomes_path
     else 
@@ -27,7 +31,6 @@ class WelcomesController < ApplicationController
   end
     
   def update
-    @welcome = Welcome.find(params[:id])
     if @welcome.update(welcome_params)
       redirect_to welcomes_path
     else
@@ -36,7 +39,7 @@ class WelcomesController < ApplicationController
   end
 
   def destroy
-    @welcome = Welcome.find(params[:id])
+
     @welcome.destroy
     redirect_to welcomes_path
   end
@@ -45,4 +48,9 @@ class WelcomesController < ApplicationController
   def welcome_params
     params.require(:welcome).permit(:month, :date, :week, :money)
   end
+
+  def set_welcome
+    @welcome = Welcome.find(params[:id])
+  end
+    
 end
