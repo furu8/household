@@ -32,7 +32,7 @@ class WelcomesController < ApplicationController
 
   def update
     if @welcome.update(welcome_params)
-      redirect_to lists_index_path
+      redirect_to welcome_path
     else
       render 'edit'
     end

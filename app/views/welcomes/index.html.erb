@@ -3,15 +3,25 @@
   <% %>
   家計簿
 </h2>
+
+<% judge = [] %>
+<% i = 0 %>
+<% flg = 0 %>
+
 <ul>
   <% @welcomes.each do |welcome| %>
+    <% judge[i] = welcome.month %>
+    <% i.times do |i| %>
+      <% if judge[i] == welcome.month %>
+        <% flg = 1 %>
+      <% end %>
+    <% end %>
+    <% if flg == 1 %>
+      <% next %>
+    <% end %>
   <li>
     <%= link_to welcome.month, welcome_path(welcome) %>月
-    <%= link_to '[X]', 
-                welcome_path(welcome), 
-                method: :delete,  
-                class: 'command',
-                data: { confirm: '削除しますか?'} %>
+    <% i += 1 %>
   </li>
   <% end %>
 </ul>
