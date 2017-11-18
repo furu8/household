@@ -1,25 +1,17 @@
 <h2>
   <%= link_to '追加', new_welcome_path, class: 'header-menu' %>
+  <% %>
   家計簿
 </h2>
-<% sum = 0 %>
 <ul>
-  　　日付　　　食費　
   <% @welcomes.each do |welcome| %>
   <li>
-    <%= welcome.month %>月
-    <%= welcome.date %>日
-    (<%= welcome.week %>)
-    <%= welcome.money %>円
-    <%= link_to '[変更]', edit_welcome_path(welcome), class: 'command' %>
+    <%= link_to welcome.month, welcome_path(welcome) %>月
     <%= link_to '[X]', 
                 welcome_path(welcome), 
                 method: :delete,  
                 class: 'command',
-                data: { confirm: '削除しますか?' } %>
+                data: { confirm: '削除しますか?'} %>
   </li>
-  <% sum +=  welcome.money.to_i %>
   <% end %>
-  <br>
-  <li>合計: <%= sum %></li>
 </ul>

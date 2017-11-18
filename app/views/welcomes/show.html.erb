@@ -1,25 +1,28 @@
 <h2>
-  
+  <%= @welcome.month %>月
 </h2>
 
 <% sum = 0 %>
+<% i = 1 %>
 <ul>
   　　日付　　　食費　
   <% @welcomes.each do |welcome| %>
-  <li>
-    <%= welcome.month %>月
-    <%= welcome.date %>日
-    (<%= welcome.week %>)
-    <%= welcome.money %>円
-    <%= link_to '[変更]', edit_welcome_path(welcome), class: 'command' %>
-    <%= link_to '[X]', 
-                welcome_path(welcome), 
-                method: :delete,  
-                class: 'command',
-                data: { confirm: '削除しますか?' } %>
-  </li>
-  <% sum +=  welcome.money.to_i %>
+  <p>
+    <% if welcome.month == @welcome.month %>
+      <%= welcome.month %>月
+      <%= welcome.date %>日
+      (<%= welcome.week %>)
+      <%= welcome.money %>円
+      <%= link_to '[変更]', edit_welcome_path(welcome), class: 'command'%>
+      <%= link_to '[X]', 
+                  welcome_path(welcome), 
+                  method: :delete,  
+                  class: 'command',
+                  data: { confirm: '削除しますか?'} %>
+    <% sum += welcome.money.to_i %>              
+    <% end %>
+  </p>
+    <% i += 1 %>
   <% end %>
-  <br>
-  <li>合計: <%= sum %></li>
+  <p>合計: <%= sum %></p>
 </ul>

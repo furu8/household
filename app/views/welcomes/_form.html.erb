@@ -11,7 +11,8 @@
   <p>
     <%= f.text_field :money, placeholder: '金額' %> 円
     <% if @welcome.errors.messages[:money].any? %> 
-  <span class="error"><%= @welcome.errors.messages[:money][0] %></span>    <% end %>
+      <span class="error"><%= @welcome.errors.messages[:money][0] %></span>  
+    <% end %>
   </p>
   <p>
     <%= f.submit "追加" %>

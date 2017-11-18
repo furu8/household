@@ -1,15 +1,15 @@
 class WelcomesController < ApplicationController
-  before_action :set_welcome, only: [:edit, :update, :destroy]
+  before_action :set_welcome, only: [:edit, :show, :update, :destroy]
+  before_action :set_welcomes, only: [:index, :show]
   
   def index
-    @welcomes = Welcome.all
+  end
+
+  def show 
   end
     
   def new
     @welcome = Welcome.new
-  end
-
-  def edit
   end
   
   def create
@@ -24,33 +24,35 @@ class WelcomesController < ApplicationController
     @welcome.date = date    
     @welcome.week = week        
     if @welcome.save
-      redirect_to welcomes_path
+      redirect_to welcomes_path 
     else 
       render 'new'
     end
   end
-    
+
   def update
     if @welcome.update(welcome_params)
-      redirect_to welcomes_path
+      redirect_to lists_index_path
     else
       render 'edit'
     end
   end
-
+  
   def destroy
-
     @welcome.destroy
     redirect_to welcomes_path
   end
 
   private
-  def welcome_params
-    params.require(:welcome).permit(:month, :date, :week, :money)
-  end
-
-  def set_welcome
-    @welcome = Welcome.find(params[:id])
-  end
+    def welcome_params
+      params.require(:welcome).permit(:month, :date, :week, :money)
+    end
     
+    def set_welcome
+      @welcome = Welcome.find(params[:id])
+    end
+
+    def set_welcomes
+      @welcomes = Welcome.all
+    end
 end
